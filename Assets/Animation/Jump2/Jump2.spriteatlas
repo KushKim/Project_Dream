@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Jump2
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 3a9a700e935e3b74b9abcb7770459434, type: 3}
+    - {fileID: 2800000, guid: 807ce593574486f4fa36a8d99678a9ea, type: 3}
+    - {fileID: 2800000, guid: 115fbf4524f85d04e9a7d92ab7ee273b, type: 3}
+    - {fileID: 2800000, guid: eff20149a9e25e94c832d919607da23a, type: 3}
+    - {fileID: 2800000, guid: bc67ceb1efaaf7749959d5bba8768b00, type: 3}
+    - {fileID: 2800000, guid: ba06066f45e6901468051c87cebab9bc, type: 3}
+    - {fileID: 2800000, guid: b4040b1695bf87d4da5700fe5f36219d, type: 3}
+    - {fileID: 2800000, guid: eb9daad8c1c71f24382ab8b38a30f8e8, type: 3}
+    - {fileID: 2800000, guid: 9255d5d49a1cac845bbf441ed0999e32, type: 3}
+    - {fileID: 2800000, guid: 9f1e4fd29daf2c941833f0994b4b52b5, type: 3}
+    - {fileID: 2800000, guid: af6291837d8a6844c8fdcf88e52d23b1, type: 3}
+    - {fileID: 2800000, guid: c413c83b0763bc043aa7493140a9888c, type: 3}
+    - {fileID: 2800000, guid: 377a62c233d04844187544b8db47b2fa, type: 3}
+    - {fileID: 2800000, guid: e8d8243f137f01c4e9a83700a53c1fda, type: 3}
+    - {fileID: 2800000, guid: e6ec204ec56b039488ff0757a0c687c2, type: 3}
+    - {fileID: 2800000, guid: aa83b68f66fc34a44ba86207503a160c, type: 3}
+    - {fileID: 2800000, guid: 055435f4e7eee074d9185c2aa8737b6f, type: 3}
+    - {fileID: 2800000, guid: d2ed836512d86074588683244822f4c7, type: 3}
+    - {fileID: 2800000, guid: acdd2227eb46fc949a29382cc417f157, type: 3}
+    - {fileID: 2800000, guid: 7a531ee47fb46f74492caab054493340, type: 3}
+    totalSpriteSurfaceArea: 29060900
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: bc67ceb1efaaf7749959d5bba8768b00, type: 3}
+  - {fileID: 21300000, guid: 377a62c233d04844187544b8db47b2fa, type: 3}
+  - {fileID: 21300000, guid: 9f1e4fd29daf2c941833f0994b4b52b5, type: 3}
+  - {fileID: 21300000, guid: af6291837d8a6844c8fdcf88e52d23b1, type: 3}
+  - {fileID: 21300000, guid: 807ce593574486f4fa36a8d99678a9ea, type: 3}
+  - {fileID: 21300000, guid: 9255d5d49a1cac845bbf441ed0999e32, type: 3}
+  - {fileID: 21300000, guid: 7a531ee47fb46f74492caab054493340, type: 3}
+  - {fileID: 21300000, guid: 055435f4e7eee074d9185c2aa8737b6f, type: 3}
+  - {fileID: 21300000, guid: 115fbf4524f85d04e9a7d92ab7ee273b, type: 3}
+  - {fileID: 21300000, guid: d2ed836512d86074588683244822f4c7, type: 3}
+  - {fileID: 21300000, guid: b4040b1695bf87d4da5700fe5f36219d, type: 3}
+  - {fileID: 21300000, guid: acdd2227eb46fc949a29382cc417f157, type: 3}
+  - {fileID: 21300000, guid: eb9daad8c1c71f24382ab8b38a30f8e8, type: 3}
+  - {fileID: 21300000, guid: eff20149a9e25e94c832d919607da23a, type: 3}
+  - {fileID: 21300000, guid: c413c83b0763bc043aa7493140a9888c, type: 3}
+  - {fileID: 21300000, guid: 3a9a700e935e3b74b9abcb7770459434, type: 3}
+  - {fileID: 21300000, guid: e6ec204ec56b039488ff0757a0c687c2, type: 3}
+  - {fileID: 21300000, guid: e8d8243f137f01c4e9a83700a53c1fda, type: 3}
+  - {fileID: 21300000, guid: ba06066f45e6901468051c87cebab9bc, type: 3}
+  - {fileID: 21300000, guid: aa83b68f66fc34a44ba86207503a160c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - "SD \uB9AC\uC18C\uC2A4-jump2_04"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_12"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_09"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_10"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_01"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_08"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_19"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_16"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_02"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_17"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_06"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_18"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_07"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_03"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_11"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_00"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_14"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_13"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_05"
+  - "SD \uB9AC\uC18C\uC2A4-jump2_15"
+  m_Tag: Jump2
+  m_IsVariant: 0

@@ -5679,13 +5679,13 @@ GameObject:
   m_Component:
   - component: {fileID: 851897368}
   - component: {fileID: 851897367}
-  - component: {fileID: 851897366}
-  - component: {fileID: 851897369}
   - component: {fileID: 851897371}
   - component: {fileID: 851897370}
+  - component: {fileID: 851897366}
+  - component: {fileID: 851897369}
   m_Layer: 0
-  m_Name: "SD \uB9AC\uC18C\uC2A4"
-  m_TagString: Untagged
+  m_Name: Player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5697,15 +5697,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851897365}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69d5bd1b2ead225449041d39e09312b8, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c0f16e896e3e80468ceecc2b55fb0a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 8.5
-  tr: {fileID: 0}
-  h: 0
-  jumppower: 10
+  moveSpeed: 8.5
+  jumpPower: 8
+  jumpCount: 2
 --- !u!212 &851897367
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5764,25 +5763,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851897365}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.69, y: -3.68, z: 0}
+  m_LocalPosition: {x: -7.15, y: -3.41, z: 0}
   m_LocalScale: {x: 0.13415484, y: 0.11880725, z: 0.4690112}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &851897369
-MonoBehaviour:
+--- !u!95 &851897369
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851897365}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e335c8070ae45c841914a55db454b0cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 77380d2a50d577e4db5cfe3d5743275b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &851897370
 Rigidbody2D:
   serializedVersion: 4
@@ -5798,7 +5803,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
