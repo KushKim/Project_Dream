@@ -12203,7 +12203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8.5
-  jumpPower: 8
+  jumpPower: 11
   jumpCount: 2
 --- !u!212 &851897367
 SpriteRenderer:
@@ -12303,7 +12303,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1.5
+  m_GravityScale: 2.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -14120,7 +14120,6 @@ Transform:
   - {fileID: 1161345455}
   - {fileID: 1039867431}
   - {fileID: 2083655692}
-  - {fileID: 1305448175}
   - {fileID: 502729506}
   - {fileID: 1892921275}
   - {fileID: 791853669}
@@ -14144,6 +14143,7 @@ Transform:
   - {fileID: 867026705}
   - {fileID: 1356728521}
   - {fileID: 1998593143}
+  - {fileID: 1305448175}
   - {fileID: 366419860}
   - {fileID: 483642796}
   - {fileID: 697921657}

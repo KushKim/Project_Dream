@@ -16,37 +16,21 @@ public class PlayerMove : MonoBehaviour
        Pos = GetComponent<Transform>();
        rigd = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        StartCoroutine("MoveCtrl");
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-
-    }
-    IEnumerator MoveCtrl()
-    {
-        while (true)
+        Pos.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            Pos.Translate(Vector2.right * moveSpeed * Time.deltaTime);
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (jumpCount > 0)
             {
-                if (jumpCount == 2)
-                {
-                    anim.SetInteger("Jump", jumpCount);
-                    anim.SetBool("JumpOn", true);
-                    rigd.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
-                    jumpCount--;
-                }
-                else if (jumpCount == 1)
-                {
-                    anim.SetInteger("Jump", jumpCount);
-                    anim.SetBool("JumpOn", true);
-                    rigd.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
-                    jumpCount--;
-                }
+                anim.SetInteger("Jump", jumpCount);
+                anim.SetBool("JumpOn", true);
+                rigd.velocity=new Vector2(0,jumpPower);
+                jumpCount--;
             }
-            yield return new WaitForFixedUpdate();
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
