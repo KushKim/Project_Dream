@@ -71,7 +71,13 @@ namespace Utilities.Animation
                         nowPlay.IsPlaying = true;
                         Reset();
                         tempPlaying = nowPlaying;
+                        //SceneManager.LoadScene("Level1");
                         break;
+                        if (!animationList[i].AnimationName.Equals(nowPlaying))
+                        {
+                            continue;
+                        }
+                    
                     }
                 }
             }
