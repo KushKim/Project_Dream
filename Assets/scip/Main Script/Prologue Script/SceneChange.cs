@@ -7,12 +7,13 @@ using UnityEngine.UIElements;
 
 public class SceneChange : MonoBehaviour
 {
-   
+    public float DelayTime;
     private void Start()
     { 
+    
         
         StartCoroutine(Active());
-        Invoke("ActiveTrue", 5.0f);
+        Invoke("ActiveTrue", DelayTime);
     }
     IEnumerator Active()
     {
