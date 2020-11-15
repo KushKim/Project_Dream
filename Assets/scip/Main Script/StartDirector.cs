@@ -5,17 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class StartDirector : MonoBehaviour
 {
-    private Animator animator;
-    private GameObject Fadein;
-    /*private void Awake()
-    {
-        Fadein = GameObject.Find("Canvas").transform.Find("fadein").gameObject;
-    }
-    */
+    public GameObject fadein;
+
+
     public void OnclickStart()
     {
-        //Fadein.SetActive(true);
-        //animator.SetTrigger("fadein");
+        fadein.gameObject.SetActive(true);
         Invoke("InvokeAni", 4f);
     }
     void InvokeAni()
