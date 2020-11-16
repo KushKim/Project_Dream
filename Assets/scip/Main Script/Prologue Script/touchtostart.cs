@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class touchtostart : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void OnClickChange()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            SceneManager.LoadScene("Level1");
-        }
+        SceneManager.LoadScene("Level1");
+    }
+    public void OnClickSkip()
+    {
+        SceneManager.LoadScene("Level1");
     }
 
 

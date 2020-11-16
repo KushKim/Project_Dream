@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 public class SceneChange : MonoBehaviour
 {
     public float DelayTime;
-    
+    public GameObject StartBT;
 private void Start()
     {
 
@@ -32,7 +32,7 @@ private void Start()
 
 private void ActiveTrue()
     {
-        GameObject.Find("Canvas").transform.Find("ClickToStart").gameObject.SetActive(true);
+        StartBT.gameObject.SetActive(true);
     }
     
 }

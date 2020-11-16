@@ -5,10 +5,11 @@ using UnityEngine;
 public class fadein : MonoBehaviour
 {
     public GameObject 제거대상;
+    public int DelayTime;
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("DestroyObject", 3f);
+        Invoke("DestroyObject", DelayTime);
     }
 
     // Update is called once per frame
