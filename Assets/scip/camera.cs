@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class camera : MonoBehaviour
 {
-    public GameObject A;
+    public GameObject player;
     Transform AT;
+    public float a = 8f;
     
     // Start is called before the first frame update
     void Start()
     {
-        AT = A.transform;
+        AT = player.transform;
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.position = new Vector3(AT.position.x + 8f, 0f, -10f);
+        transform.position = new Vector3(AT.position.x + a, 0f, -10f);
     }
 }
