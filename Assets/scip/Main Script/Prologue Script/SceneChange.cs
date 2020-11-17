@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 public class SceneChange : MonoBehaviour
 {
-    public float DelayTime;
+    public float DelayTime = 15f;
     public GameObject StartBT;
 private void Start()
     {

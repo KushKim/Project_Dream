@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FrameLock : MonoBehaviour
 {
-    public int FrameRate;
+    public int FrameRate = 60;
     private void Awake()
     {
         Application.targetFrameRate = FrameRate; // No Vsync

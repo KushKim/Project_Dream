@@ -5,7 +5,7 @@ using UnityEngine;
 public class startbtinvoke : MonoBehaviour
 {
     public GameObject StartBT;
-    public int delaytime;
+    public int delaytime = 3;
     // Start is called before the first frame update
     void Start()
     {

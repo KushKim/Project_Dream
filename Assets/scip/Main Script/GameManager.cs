@@ -40,7 +40,8 @@ public class GameManager : MonoBehaviour
     public void QuitBt()
     {
         Debug.Log("Quit Game");
-        SceneManager.LoadScene("Prologue");
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene("MainStart");
     }
 }
 
