@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FrameChecker : MonoBehaviour
 {
+    
     float deltaTime = 0.0f;
     GUIStyle style;
     Rect rect;
@@ -14,6 +15,7 @@ public class FrameChecker : MonoBehaviour
 
     private void Awake()
     {
+        
         int w = Screen.width, h = Screen.height;
         rect = new Rect(0, 0, w, h * 4 / 100);
         style = new GUIStyle();
