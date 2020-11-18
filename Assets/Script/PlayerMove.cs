@@ -10,6 +10,8 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D rigd;
     public int jumpCount = 2;
     private Animator anim;
+    public int playerHp;
+    private bool hitObstacle;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,11 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(playerHp <= 0)
+        {
+
+        }
+
         Pos.Translate(Vector2.right * moveSpeed * Time.deltaTime);
         RaycastHit2D ray = Physics2D.Raycast(transform.position, Vector2.down);
         Debug.DrawRay(transform.position, Vector2.down, Color.red);
@@ -39,6 +46,16 @@ public class PlayerMove : MonoBehaviour
             jumpCount = 2;
             anim.SetBool("JumpOn", false);
         }
+
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+            if (!hitObstacle)
+            {
+                playerHp--;
+                StartCoroutine(Delay());
+            }
+        }
     }
     public void Jump()
     {
@@ -49,5 +66,12 @@ public class PlayerMove : MonoBehaviour
             rigd.velocity = new Vector2(0, jumpPower); // 더블점프 문제로 고정값 넣어둠
             jumpCount--;
         }
+    }
+
+    IEnumerator Delay()
+    {
+        hitObstacle = true;
+        yield return new WaitForSeconds(2f);
+        hitObstacle = false;
     }
 }
