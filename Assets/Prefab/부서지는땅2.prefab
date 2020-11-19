@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2175064067363453927}
   - component: {fileID: 3664874290561951993}
   - component: {fileID: 2173972236120466714}
+  - component: {fileID: -7830655376099787866}
   m_Layer: 0
   m_Name: "\uBD80\uC11C\uC9C0\uB294\uB5452"
-  m_TagString: Untagged
+  m_TagString: FallingGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,3 +102,24 @@ EdgeCollider2D:
   m_Points:
   - {x: -7.2300005, y: 0}
   - {x: 7.2300005, y: 0}
+--- !u!50 &-7830655376099787866
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8921740633641510001}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
