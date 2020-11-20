@@ -24,12 +24,4 @@ public class ActiveStone : MonoBehaviour
             this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            rigd.gravityScale = 7f;
-        }
-    }
 }
