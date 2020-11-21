@@ -7,18 +7,18 @@ public class ActiveObstacle : MonoBehaviour
     private bool active;
     public float downSpeed;
     int mask = 1 << 8;
-    public GameObject player;
+    private Transform player;
     public float distancePos;
     // Start is called before the first frame update
     void Start()
     {
-
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector2.Distance(player.transform.position, transform.position);
+        float distance = Vector2.Distance(player.position, transform.position);
 
         if(distance <= distancePos)
         {

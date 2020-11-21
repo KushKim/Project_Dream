@@ -29,15 +29,6 @@ public class PlayerMove : MonoBehaviour
         }
 
         Pos.Translate(Vector2.right * moveSpeed * Time.deltaTime);
-        RaycastHit2D ray = Physics2D.Raycast(transform.position, Vector2.down);
-        Debug.DrawRay(transform.position, Vector2.down, Color.red);
-        if(ray.collider == null)
-        {
-            if(jumpCount >= 2)
-            {
-                jumpCount--;
-            }
-        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

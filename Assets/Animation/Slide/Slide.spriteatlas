@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Slide
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 138b70938f8ca4047a8ee63dd22ca5dd, type: 3}
+    - {fileID: 2800000, guid: 4fb5f9e75cbf1c043bfe1f335af474c9, type: 3}
+    - {fileID: 2800000, guid: 264c51fde3ccccd439be9dcdd5f83a03, type: 3}
+    - {fileID: 2800000, guid: 2ec09f42beed6d241abd6f42d71fe0df, type: 3}
+    - {fileID: 2800000, guid: 089dd8cd8172a2848952d528f87974c5, type: 3}
+    - {fileID: 2800000, guid: 36f53c5636803994c88516c609d64cef, type: 3}
+    - {fileID: 2800000, guid: 6c1c5457598589c43947aa80a838fd44, type: 3}
+    - {fileID: 2800000, guid: 4a7b64c7982db7b479a9cc361a5ec58a, type: 3}
+    - {fileID: 2800000, guid: 9b331b44e15c7a648b1a786621285708, type: 3}
+    - {fileID: 2800000, guid: 792ea69e0c742eb4a8fe505b0f94bc2b, type: 3}
+    - {fileID: 2800000, guid: fb98d4e8439e1b646901125dd50f214a, type: 3}
+    - {fileID: 2800000, guid: 04bd26a252826394482dd77683fbf1c1, type: 3}
+    - {fileID: 2800000, guid: a01c5e121f2485c4590b388f74396243, type: 3}
+    - {fileID: 2800000, guid: 7639f1927016a3f42afa0e81d7225a22, type: 3}
+    - {fileID: 2800000, guid: d672e9fcd650b7c4e8b09d83d3ca5151, type: 3}
+    - {fileID: 2800000, guid: 58bde8c49b134e547a9dcb371c3f854f, type: 3}
+    - {fileID: 2800000, guid: 6d5a519fccd83424ca63ff450c5ab831, type: 3}
+    - {fileID: 2800000, guid: 05a36ba54d6454c4ba9927adbb1df1c8, type: 3}
+    - {fileID: 2800000, guid: 884c91e53fab4834aa2281f70eedb3eb, type: 3}
+    - {fileID: 2800000, guid: f68faee888314cf4a9bd57a00c4fd6db, type: 3}
+    totalSpriteSurfaceArea: 25276160
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: a01c5e121f2485c4590b388f74396243, type: 3}
+  - {fileID: 21300000, guid: 2ec09f42beed6d241abd6f42d71fe0df, type: 3}
+  - {fileID: 21300000, guid: 7639f1927016a3f42afa0e81d7225a22, type: 3}
+  - {fileID: 21300000, guid: 04bd26a252826394482dd77683fbf1c1, type: 3}
+  - {fileID: 21300000, guid: 138b70938f8ca4047a8ee63dd22ca5dd, type: 3}
+  - {fileID: 21300000, guid: 9b331b44e15c7a648b1a786621285708, type: 3}
+  - {fileID: 21300000, guid: 58bde8c49b134e547a9dcb371c3f854f, type: 3}
+  - {fileID: 21300000, guid: 05a36ba54d6454c4ba9927adbb1df1c8, type: 3}
+  - {fileID: 21300000, guid: 884c91e53fab4834aa2281f70eedb3eb, type: 3}
+  - {fileID: 21300000, guid: 36f53c5636803994c88516c609d64cef, type: 3}
+  - {fileID: 21300000, guid: 6c1c5457598589c43947aa80a838fd44, type: 3}
+  - {fileID: 21300000, guid: 4a7b64c7982db7b479a9cc361a5ec58a, type: 3}
+  - {fileID: 21300000, guid: 4fb5f9e75cbf1c043bfe1f335af474c9, type: 3}
+  - {fileID: 21300000, guid: fb98d4e8439e1b646901125dd50f214a, type: 3}
+  - {fileID: 21300000, guid: f68faee888314cf4a9bd57a00c4fd6db, type: 3}
+  - {fileID: 21300000, guid: d672e9fcd650b7c4e8b09d83d3ca5151, type: 3}
+  - {fileID: 21300000, guid: 089dd8cd8172a2848952d528f87974c5, type: 3}
+  - {fileID: 21300000, guid: 264c51fde3ccccd439be9dcdd5f83a03, type: 3}
+  - {fileID: 21300000, guid: 792ea69e0c742eb4a8fe505b0f94bc2b, type: 3}
+  - {fileID: 21300000, guid: 6d5a519fccd83424ca63ff450c5ab831, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - "SD \uB9AC\uC18C\uC2A4-slide_12"
+  - "SD \uB9AC\uC18C\uC2A4-slide_03"
+  - "SD \uB9AC\uC18C\uC2A4-slide_13"
+  - "SD \uB9AC\uC18C\uC2A4-slide_11"
+  - "SD \uB9AC\uC18C\uC2A4-slide_00"
+  - "SD \uB9AC\uC18C\uC2A4-slide_08"
+  - "SD \uB9AC\uC18C\uC2A4-slide_15"
+  - "SD \uB9AC\uC18C\uC2A4-slide_17"
+  - "SD \uB9AC\uC18C\uC2A4-slide_18"
+  - "SD \uB9AC\uC18C\uC2A4-slide_05"
+  - "SD \uB9AC\uC18C\uC2A4-slide_06"
+  - "SD \uB9AC\uC18C\uC2A4-slide_07"
+  - "SD \uB9AC\uC18C\uC2A4-slide_01"
+  - "SD \uB9AC\uC18C\uC2A4-slide_10"
+  - "SD \uB9AC\uC18C\uC2A4-slide_19"
+  - "SD \uB9AC\uC18C\uC2A4-slide_14"
+  - "SD \uB9AC\uC18C\uC2A4-slide_04"
+  - "SD \uB9AC\uC18C\uC2A4-slide_02"
+  - "SD \uB9AC\uC18C\uC2A4-slide_09"
+  - "SD \uB9AC\uC18C\uC2A4-slide_16"
+  m_Tag: Slide
+  m_IsVariant: 0
