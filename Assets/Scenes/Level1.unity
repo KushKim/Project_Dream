@@ -3339,7 +3339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c0f16e896e3e80468ceecc2b55fb0a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  moveSpeed: 8.5
   jumpPower: 11
   jumpCount: 2
   playerHp: 0
@@ -5870,7 +5870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4aa1b1010aec704fabdad1aba9e056c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
+  anim: {fileID: 851897372}
   box: {fileID: 851897371}
 --- !u!4 &1702855860 stripped
 Transform:
