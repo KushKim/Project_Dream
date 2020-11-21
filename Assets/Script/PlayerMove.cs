@@ -32,13 +32,13 @@ public class PlayerMove : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Ground")
+        if(collision.gameObject.tag.Equals("Ground"))
         {
             jumpCount = 2;
             anim.SetBool("JumpOn", false);
         }
 
-        if (collision.gameObject.tag == "Obstacle")
+        if (collision.gameObject.tag.Equals("Obstacle"))
         {
             collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
             if (!hitObstacle)
