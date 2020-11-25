@@ -52,5 +52,15 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1.0f;
         SceneManager.LoadScene("MainStart");
     }
+    public void LV2RetryBt()
+    {
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene("Level2");
+    }
+    public void LV3RetryBt()
+    {
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene("Level3");
+    }
 }
 
