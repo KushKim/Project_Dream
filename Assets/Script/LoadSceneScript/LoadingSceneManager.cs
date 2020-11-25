@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+//Top of the script
+#pragma warning disable 0649
 public class LoadingSceneManager : MonoBehaviour
 {
 
     [SerializeField]
-    Image loadingBar;
+    private Image loadingBar;
 
     private void Start()
     {
