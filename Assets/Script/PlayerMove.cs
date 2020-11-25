@@ -12,6 +12,7 @@ public class PlayerMove : MonoBehaviour
     private Animator anim;
     public int playerHp;
     private bool hitObstacle;
+    public GameObject ob;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,14 @@ public class PlayerMove : MonoBehaviour
         }
 
         Pos.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+        if (Pos.position.y < -7)
+        {
+            Pos.transform.position = new Vector2(Pos.position.x, -1f);
+            rigd.AddForce(Vector2.up * 30, ForceMode2D.Impulse);
+            playerHp--;
+            ob.SetActive(true);
+            StartCoroutine(Delay());
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -63,6 +72,7 @@ public class PlayerMove : MonoBehaviour
     {
         hitObstacle = true;
         yield return new WaitForSeconds(2f);
+        ob.SetActive(false);
         hitObstacle = false;
     }
 }
