@@ -21,7 +21,7 @@ public class ActiveStone : MonoBehaviour
 
         if(distance <= distancePos)
         {
-            rigd.gravityScale = 10f;
+            rigd.gravityScale = 5f;
         }
     }
 
