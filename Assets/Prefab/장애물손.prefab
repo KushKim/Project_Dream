@@ -95,5 +95,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   downSpeed: 10
-  player: {fileID: 0}
   distancePos: 10
