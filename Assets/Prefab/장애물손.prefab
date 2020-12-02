@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8336573603730211820}
   - component: {fileID: 8336573603730211821}
   - component: {fileID: 8336573603730211823}
+  - component: {fileID: 5721948965258592599}
   m_Layer: 0
   m_Name: "\uC7A5\uC560\uBB3C\uC190"
   m_TagString: Obstacle
@@ -95,4 +96,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   downSpeed: 10
-  distancePos: 10
+  distancePos: 12
+--- !u!61 &5721948965258592599
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8336573603730211816}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.95638275}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 30.078125, y: 100}
+    newSize: {x: 14.22, y: 19.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 30.000002, y: 98.15239}
+  m_EdgeRadius: 0
