@@ -22,8 +22,8 @@ public class ActiveObstacle : MonoBehaviour
 
         if(distance <= distancePos)
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 4f, mask);
-            Debug.DrawRay(transform.position, Vector2.down * 4f, Color.red);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 6.3f, mask);
+            Debug.DrawRay(transform.position, Vector2.down * 6.3f, Color.red);
 
             if(hit.collider == null)
             {
