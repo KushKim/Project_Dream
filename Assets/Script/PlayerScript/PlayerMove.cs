@@ -48,7 +48,7 @@ public class PlayerMove : MonoBehaviour
     {
         if(Player.playerHP <= 0)
         {
-
+            rigd.gravityScale = 0;
         }
         else
         {
@@ -58,9 +58,12 @@ public class PlayerMove : MonoBehaviour
         {
             rigd.velocity = new Vector2(0.1f, 25f);
             jumpCount = 1;
+            if (!player.infinity)
+            {
+                StartCoroutine(Infinity());
+            }
             StartCoroutine(player.Infinity());
             StartCoroutine(EnbleBox());
-            StartCoroutine(Infinity());
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -74,8 +77,11 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.tag.Equals("Obstacle"))
         {
             collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+            if (!player.infinity)
+            {
+                StartCoroutine(Infinity());
+            }
             StartCoroutine(player.Infinity());
-            StartCoroutine(Infinity());
         }
     }
     public void Jump()
@@ -97,7 +103,7 @@ public class PlayerMove : MonoBehaviour
     }
     IEnumerator Infinity()
     {
-        for(int i = 0; i <= 20; i++)
+        for(int i = 0; i <= 9; i++)
         {
             sp.color = new Color(255, 255, 255, 0);
             yield return new WaitForSeconds(0.1f);
