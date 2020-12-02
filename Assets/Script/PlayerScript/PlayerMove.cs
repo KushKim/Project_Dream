@@ -3,42 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [SerializeField]
-public class Player : MonoBehaviour // 플레이어 상태 클래스
+public class Player // 플레이어 상태 클래스
 {
     static public int playerHP = 3;
     public bool infinityPlayer;
-    static private BoxCollider2D box;
-    static private SpriteRenderer sp;
 
-    private void Start()
-    {
-       box = GetComponent<BoxCollider2D>();
-        sp = GetComponent<SpriteRenderer>();
-    }
-    public IEnumerator Hit(IEnumerator coroutine)
+    public IEnumerator Hit()
     {
         if (!infinityPlayer)
         {
             --playerHP;
             infinityPlayer = true;
-            StartCoroutine(coroutine);
             yield return new WaitForSeconds(2f);
             infinityPlayer = false;
-            StopCoroutine(coroutine);
-        }
-    }
-    
-    public IEnumerator Infinity()
-    {
-        box.enabled = false;
-        yield return new WaitForSeconds(0.3f);
-        box.enabled = true;
-        while (true)
-        {
-            sp.color = new Color(255, 255, 255, 0);
-            yield return new WaitForSeconds(0.3f);
-            sp.color = new Color(255, 255, 255, 255);
-            yield return new WaitForSeconds(0.3f);
         }
     }
 }
@@ -52,6 +29,7 @@ public class PlayerMove : MonoBehaviour
     private Transform Pos;
     private Rigidbody2D rigd;
     private BoxCollider2D box;
+    private SpriteRenderer sp;
 
     private Animator anim;
     private Player player = new Player();
@@ -61,6 +39,8 @@ public class PlayerMove : MonoBehaviour
        Pos = GetComponent<Transform>();
        rigd = GetComponent<Rigidbody2D>();
        anim = GetComponent<Animator>();
+        box = GetComponent<BoxCollider2D>();
+        sp = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -69,8 +49,16 @@ public class PlayerMove : MonoBehaviour
         Pos.Translate(Vector2.right * moveSpeed * Time.deltaTime); // 기본 전진
         if (Pos.position.y < -7) // 떨어진 좌표
         {
-            rigd.velocity = new Vector2(0, 20f);
-            StartCoroutine(player.Hit(player.Infinity()));
+            rigd.velocity = new Vector2(0.1f, 20f);
+            StartCoroutine(player.Hit());
+            StartCoroutine(Infinity());
+            StartCoroutine(Boxenble());
+
+        }
+
+        if(Player.playerHP <= 0)
+        {
+
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -84,6 +72,8 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.tag.Equals("Obstacle"))
         {
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            StartCoroutine(player.Hit());
+            StartCoroutine(Infinity());
         }
     }
     public void Jump()
@@ -95,5 +85,21 @@ public class PlayerMove : MonoBehaviour
             rigd.velocity = new Vector2(0, jumpPower); // 더블점프 문제로 고정값 넣어둠
             jumpCount--;
         }
+    }
+    public IEnumerator Infinity()
+    {
+        for (int i = 0; i <= 10; i++)
+        {
+            sp.color = new Color(255, 255, 255, 0);
+            yield return new WaitForSeconds(0.1f);
+            sp.color = new Color(255, 255, 255, 255);
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+    public IEnumerator Boxenble()
+    {
+        box.enabled = false;
+        yield return new WaitForSeconds(1f);
+        box.enabled = true;
     }
 }
