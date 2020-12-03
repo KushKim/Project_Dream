@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     private GameObject pausePanel;
     private GameObject jumpBT;
     private GameObject slideBT;
+    private AudioManager audioManager;
 
     private void Awake()
     {
@@ -17,12 +18,14 @@ public class GameManager : MonoBehaviour
         pausePanel = GameObject.Find("Canvas").transform.Find("PauseUI").gameObject;
         jumpBT = GameObject.Find("Canvas").transform.Find("JumpButton").gameObject;
         slideBT = GameObject.Find("Canvas").transform.Find("SlideButton").gameObject;
+        audioManager = FindObjectOfType<AudioManager>();
+
     }
     public void ActivePauseBt()
     {
         if (!pauseOn)
         {
-            
+            audioManager.Play("메뉴클릭");
             Time.timeScale = 0;
             pausePanel.SetActive(true);
             normalPanel.SetActive(false);
@@ -31,6 +34,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            audioManager.Play("메뉴클릭");
             Time.timeScale = 1.0f;
             pausePanel.SetActive(false);
             normalPanel.SetActive(true);
@@ -42,23 +46,27 @@ public class GameManager : MonoBehaviour
 
     public void RetryBt()
     {
+        audioManager.Play("메뉴클릭");
         Debug.Log("Restart Game");
         Time.timeScale = 1.0f;
         SceneManager.LoadScene("Level1");
     }
     public void QuitBt()
     {
+        audioManager.Play("메뉴클릭");
         Debug.Log("Quit Game");
         Time.timeScale = 1.0f;
         SceneManager.LoadScene("MainStart");
     }
     public void LV2RetryBt()
     {
+        audioManager.Play("메뉴클릭");
         Time.timeScale = 1.0f;
         SceneManager.LoadScene("Level2");
     }
     public void LV3RetryBt()
     {
+        audioManager.Play("메뉴클릭");
         Time.timeScale = 1.0f;
         SceneManager.LoadScene("Level3");
     }

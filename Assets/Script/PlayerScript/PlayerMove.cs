@@ -33,6 +33,8 @@ public class PlayerMove : MonoBehaviour
     private SpriteRenderer sp;
 
     private Player player = new Player();
+
+    private AudioManager audioManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +43,7 @@ public class PlayerMove : MonoBehaviour
         anim = GetComponent<Animator>();
         box = GetComponent<BoxCollider2D>();
         sp = GetComponent<SpriteRenderer>();
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame
@@ -88,6 +91,7 @@ public class PlayerMove : MonoBehaviour
     {
         if (jumpCount > 0)
         {
+            audioManager.Play("버튼클릭");
             anim.SetInteger("Jump", jumpCount);
             anim.SetBool("JumpOn", true);
             rigd.velocity = new Vector2(0, jumpPower); // 더블점프 문제로 고정값 넣어둠
