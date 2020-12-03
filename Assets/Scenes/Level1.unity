@@ -7615,6 +7615,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831769716}
   m_CullTransparentMesh: 0
+--- !u!1 &1857917119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1857917121}
+  - component: {fileID: 1857917120}
+  - component: {fileID: 1857917122}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1857917120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857917119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578216c92f479644bd5d1979c284af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audios:
+  - name: "\uBC84\uD2BC\uD074\uB9AD"
+    audioClip: {fileID: 8300000, guid: 87d11b9d5bf93b84b9b261be546a9fe6, type: 3}
+    volume: 1
+  - name: "\uBA54\uB274\uD074\uB9AD"
+    audioClip: {fileID: 8300000, guid: adc6de8977a5d634a9977523df48edda, type: 3}
+    volume: 1
+  - name: "\uBC14\uC704"
+    audioClip: {fileID: 8300000, guid: cbfbd158b9a0c944b8128383462634b0, type: 3}
+    volume: 1
+--- !u!4 &1857917121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857917119}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -30.7446, y: 2.3082016, z: -1.3691406}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1857917122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857917119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebab29a07a48a5d41a0f3b4daa9aabd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1866525210
 GameObject:
   m_ObjectHideFlags: 0
