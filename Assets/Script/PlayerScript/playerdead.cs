@@ -25,7 +25,7 @@ public class playerdead : MonoBehaviour
         youdie.SetActive(true);
         image.gameObject.SetActive(true);
         image.color = new Color(0, 0, 0, image.color.a + 1 * Time.deltaTime);
-        audioSource.volume -= 0.3f * Time.deltaTime;
+        audioSource.volume -= 0.4f * Time.deltaTime;
         yield return new WaitForSeconds(3.5f);
         Player.playerHP = 3;
         Time.timeScale = 1f;

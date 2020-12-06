@@ -35,6 +35,8 @@ public class PlayerMove : MonoBehaviour
     private Player player = new Player();
 
     private AudioManager audioManager;
+
+    private IEnumerator coroutin;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +46,7 @@ public class PlayerMove : MonoBehaviour
         box = GetComponent<BoxCollider2D>();
         sp = GetComponent<SpriteRenderer>();
         audioManager = FindObjectOfType<AudioManager>();
+        coroutin = Infinity();
     }
 
     // Update is called once per frame
@@ -51,7 +54,9 @@ public class PlayerMove : MonoBehaviour
     {
         if(Player.playerHP <= 0)
         {
-            rigd.gravityScale = 0;
+            rigd.velocity = Vector2.zero;
+            rigd.gravityScale = 0f;
+            StopCoroutine(coroutin);
             anim.SetBool("Dead",true);
         }
         else
@@ -64,7 +69,7 @@ public class PlayerMove : MonoBehaviour
             jumpCount = 1;
             if (!player.infinity)
             {
-                StartCoroutine(Infinity());
+                StartCoroutine(coroutin);
             }
             StartCoroutine(player.Infinity());
             StartCoroutine(EnbleBox());
@@ -83,7 +88,7 @@ public class PlayerMove : MonoBehaviour
             collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
             if (!player.infinity)
             {
-                StartCoroutine(Infinity());
+                StartCoroutine(coroutin);
             }
             StartCoroutine(player.Infinity());
         }
