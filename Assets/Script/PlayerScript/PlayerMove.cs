@@ -52,6 +52,7 @@ public class PlayerMove : MonoBehaviour
         if(Player.playerHP <= 0)
         {
             rigd.gravityScale = 0;
+            anim.SetBool("Dead",true);
         }
         else
         {
