@@ -8,44 +8,102 @@ using UnityEngine.SceneManagement;
 public class LoadingSceneManager : MonoBehaviour
 {
 
+    public static string nextScene;
+
+
+
     [SerializeField]
-    private Image loadingBar;
+
+    Image progressBar;
+
+
 
     private void Start()
+
     {
-        loadingBar.fillAmount = 0;
-        StartCoroutine(LoadAsyncScene());
+
+        StartCoroutine(LoadScene());
+
     }
+
+
+
     public static void LoadScene(string sceneName)
+
     {
-        SceneManager.LoadScene("loadscene");
+
+        nextScene = sceneName;
+
+        SceneManager.LoadScene("Level1");
+
     }
-    IEnumerator LoadAsyncScene()
+
+
+
+    IEnumerator LoadScene()
+
     {
+
         yield return null;
-        AsyncOperation asyncScene = SceneManager.LoadSceneAsync("Level1");
-        asyncScene.allowSceneActivation = false;
-        float timeC = 0;
-        while (!asyncScene.isDone)
+
+
+
+        AsyncOperation op = SceneManager.LoadSceneAsync(nextScene);
+
+        op.allowSceneActivation = false;
+
+
+
+        float timer = 0.0f;
+
+        while (!op.isDone)
+
         {
+
             yield return null;
-            timeC += Time.deltaTime;
-            if (asyncScene.progress >= 0.9f)
+
+
+
+            timer += Time.deltaTime;
+
+
+
+            if (op.progress < 0.9f)
+
             {
-                loadingBar.fillAmount = Mathf.Lerp(loadingBar.fillAmount, 1, timeC);
-                if (loadingBar.fillAmount == 1.0f)
+
+                progressBar.fillAmount = Mathf.Lerp(progressBar.fillAmount, op.progress, timer);
+
+                if (progressBar.fillAmount >= op.progress)
+
                 {
-                    asyncScene.allowSceneActivation = true;
+
+                    timer = 0f;
+
                 }
+
             }
+
             else
+
             {
-                loadingBar.fillAmount = Mathf.Lerp(loadingBar.fillAmount, asyncScene.progress, timeC);
-                if (loadingBar.fillAmount >= asyncScene.progress)
+
+                progressBar.fillAmount = Mathf.Lerp(progressBar.fillAmount, 1f, timer);
+
+
+
+                if (progressBar.fillAmount == 1.0f)
+
                 {
-                    timeC = 0f;
+
+                    op.allowSceneActivation = true;
+
+                    yield break;
+
                 }
+
             }
         }
     }
+
 }
