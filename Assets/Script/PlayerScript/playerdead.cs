@@ -9,6 +9,29 @@ public class playerdead : MonoBehaviour
     public GameObject youdie;
     public Image image;
     public AudioSource audioSource;
+
+    private void Start()
+    {
+        youdie = GameObject.Find("Canvas").transform.Find("Youdie").gameObject;
+        image = GameObject.Find("Canvas").transform.Find("Fade").GetComponent<Image>();
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        youdie = GameObject.Find("Canvas").transform.Find("Youdie").gameObject;
+        image = GameObject.Find("Canvas").transform.Find("Fade").GetComponent<Image>();
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
     void Update()
     {
         
