@@ -15,6 +15,6 @@ public class StartDirector : MonoBehaviour
     }
     void InvokeAni()
     {
-        SceneManager.LoadScene("Prologue");
+        SceneManager.LoadScene("prologue");
     }
 }
