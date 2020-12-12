@@ -26,10 +26,4 @@ public class Slide : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
     {
         audioManager = FindObjectOfType<AudioManager>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
