@@ -109,7 +109,7 @@ public class PlayerMove : MonoBehaviour
     IEnumerator EnbleBox()
     {
         box.enabled = false;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
         box.enabled = true;
     }
     IEnumerator Infinity()

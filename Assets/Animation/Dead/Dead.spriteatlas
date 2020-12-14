@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Dead
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 512
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: d239d26f62a779344b4d47a5cab27d37, type: 3}
+    - {fileID: 2800000, guid: 70d04db3de81de64dab4dc083f2f4318, type: 3}
+    - {fileID: 2800000, guid: f2d702bd35a03a0478f6a4cc998f41a3, type: 3}
+    - {fileID: 2800000, guid: f64dbbddaf6c61a458a9944d538d8407, type: 3}
+    - {fileID: 2800000, guid: 6af9a95330716d5419208a2df9d3542d, type: 3}
+    - {fileID: 2800000, guid: 469debdc1c22cae4ab0fe36c0d9f6395, type: 3}
+    - {fileID: 2800000, guid: 47e795adee2e2a54282492d3f407f599, type: 3}
+    - {fileID: 2800000, guid: 23fb921dad2935142a21c416b56a269c, type: 3}
+    - {fileID: 2800000, guid: 60a69b523db16224db8f957ba9b622b0, type: 3}
+    - {fileID: 2800000, guid: c521e1b1b80ba9645ae4a1e14751e13f, type: 3}
+    - {fileID: 2800000, guid: 739eb2de286ba9b499cc61f7edd0c5c8, type: 3}
+    - {fileID: 2800000, guid: 7b9e3803e7a2df748a086e2208d5ce4d, type: 3}
+    - {fileID: 2800000, guid: ffe06bf5d24fd234eb5d36c0c6e4f8cb, type: 3}
+    - {fileID: 2800000, guid: 1cf1a9141e588584f883b4484b23bc02, type: 3}
+    - {fileID: 2800000, guid: 9758ad2b96c787c43ad52b9f52ff854e, type: 3}
+    - {fileID: 2800000, guid: 609c7e5b6c1a08e4e9904e69647e3f18, type: 3}
+    - {fileID: 2800000, guid: 63a95d580c259794ea9c70f66c8192ba, type: 3}
+    - {fileID: 2800000, guid: 84549e158e00a43488c94b61c83036f2, type: 3}
+    totalSpriteSurfaceArea: 1069056
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: c521e1b1b80ba9645ae4a1e14751e13f, type: 3}
+  - {fileID: 21300000, guid: 60a69b523db16224db8f957ba9b622b0, type: 3}
+  - {fileID: 21300000, guid: 7b9e3803e7a2df748a086e2208d5ce4d, type: 3}
+  - {fileID: 21300000, guid: 6af9a95330716d5419208a2df9d3542d, type: 3}
+  - {fileID: 21300000, guid: 70d04db3de81de64dab4dc083f2f4318, type: 3}
+  - {fileID: 21300000, guid: 1cf1a9141e588584f883b4484b23bc02, type: 3}
+  - {fileID: 21300000, guid: 84549e158e00a43488c94b61c83036f2, type: 3}
+  - {fileID: 21300000, guid: ffe06bf5d24fd234eb5d36c0c6e4f8cb, type: 3}
+  - {fileID: 21300000, guid: 63a95d580c259794ea9c70f66c8192ba, type: 3}
+  - {fileID: 21300000, guid: 9758ad2b96c787c43ad52b9f52ff854e, type: 3}
+  - {fileID: 21300000, guid: 609c7e5b6c1a08e4e9904e69647e3f18, type: 3}
+  - {fileID: 21300000, guid: 469debdc1c22cae4ab0fe36c0d9f6395, type: 3}
+  - {fileID: 21300000, guid: 23fb921dad2935142a21c416b56a269c, type: 3}
+  - {fileID: 21300000, guid: 47e795adee2e2a54282492d3f407f599, type: 3}
+  - {fileID: 21300000, guid: f2d702bd35a03a0478f6a4cc998f41a3, type: 3}
+  - {fileID: 21300000, guid: f64dbbddaf6c61a458a9944d538d8407, type: 3}
+  - {fileID: 21300000, guid: 739eb2de286ba9b499cc61f7edd0c5c8, type: 3}
+  - {fileID: 21300000, guid: d239d26f62a779344b4d47a5cab27d37, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - dead_09
+  - dead_08
+  - dead_11
+  - dead_04
+  - dead_01
+  - dead_13
+  - dead_17
+  - dead_12
+  - dead_16
+  - dead_14
+  - dead_15
+  - dead_05
+  - dead_07
+  - dead_06
+  - dead_02
+  - dead_03
+  - dead_10
+  - dead_00
+  m_Tag: Dead
+  m_IsVariant: 0
