@@ -3,107 +3,49 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-//Top of the script
-#pragma warning disable 0649
+
 public class LoadingSceneManager : MonoBehaviour
 {
 
-    public static string nextScene;
-
-
-
-    [SerializeField]
-
-    Image progressBar;
-
-
+    public Slider progressbar;
+    public Text loadtext;
 
     private void Start()
-
     {
-
         StartCoroutine(LoadScene());
-
     }
-
-
-
-    public static void LoadScene(string sceneName)
-
-    {
-
-        nextScene = sceneName;
-
-        SceneManager.LoadScene("Level1");
-
-    }
-
-
-
     IEnumerator LoadScene()
-
     {
-
         yield return null;
+        AsyncOperation operation = SceneManager.LoadSceneAsync("Level1");
+        operation.allowSceneActivation = false;
 
-
-
-        AsyncOperation op = SceneManager.LoadSceneAsync(nextScene);
-
-        op.allowSceneActivation = false;
-
-
-
-        float timer = 0.0f;
-
-        while (!op.isDone)
-
+        while (!operation.isDone)
         {
-
             yield return null;
 
-
-
-            timer += Time.deltaTime;
-
-
-
-            if (op.progress < 0.9f)
-
+            if (progressbar.value < 0.9f)
             {
-
-                progressBar.fillAmount = Mathf.Lerp(progressBar.fillAmount, op.progress, timer);
-
-                if (progressBar.fillAmount >= op.progress)
-
-                {
-
-                    timer = 0f;
-
-                }
-
+                progressbar.value = Mathf.MoveTowards(progressbar.value, 0.9f, Time.deltaTime);
+            }else if (operation.progress >= 0.9f)
+            {
+                progressbar.value = Mathf.MoveTowards(progressbar.value, 1f, Time.deltaTime);
             }
 
-            else
-
+            if(operation.progress >= 0.9f)
             {
+                progressbar.value = Mathf.MoveTowards(progressbar.value, 1f, Time.deltaTime);
+            }
 
-                progressBar.fillAmount = Mathf.Lerp(progressBar.fillAmount, 1f, timer);
+            if(progressbar.value >= 1f)
+            {
+                loadtext.text = "Touch To Start";
+            }
 
-
-
-                if (progressBar.fillAmount == 1.0f)
-
-                {
-
-                    op.allowSceneActivation = true;
-
-                    yield break;
-
-                }
-
+            if (Input.GetButtonDown("Fire1") && progressbar.value >= 1f && operation.progress >= 0.9f)
+            {
+                operation.allowSceneActivation = true;
             }
         }
     }
-
 }
