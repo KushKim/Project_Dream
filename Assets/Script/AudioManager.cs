@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 [System.Serializable]
 public class EffectAudio
 {
@@ -27,6 +28,17 @@ public class AudioManager : MonoBehaviour
 {
     [SerializeField]
     public EffectAudio[] audios;
+    static private AudioManager instance;
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        instance = this;
+        DontDestroyOnLoad(this.gameObject);
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +50,15 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-   public void Play(string name)
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().name != "Level1" && SceneManager.GetActiveScene().name != "Level2" && SceneManager.GetActiveScene().name != "Level3")
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
+    public void Play(string name)
     {
         for(int i = 0; i < audios.Length; i++)
         {

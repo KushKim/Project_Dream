@@ -1308,7 +1308,7 @@ RectTransform:
   m_Children:
   - {fileID: 265726546}
   m_Father: {fileID: 1670254945}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1669,7 +1669,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1670254945}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2142,7 +2142,7 @@ RectTransform:
   m_LocalScale: {x: 1.03464, y: 1.03464, z: 1.03464}
   m_Children: []
   m_Father: {fileID: 1670254945}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3577,7 +3577,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1670254945}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4937,7 +4937,7 @@ RectTransform:
   m_Children:
   - {fileID: 728419490}
   m_Father: {fileID: 1670254945}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -6512,7 +6512,7 @@ RectTransform:
   - {fileID: 339145699}
   - {fileID: 1831769717}
   m_Father: {fileID: 1670254945}
-  m_RootOrder: 0
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9006,7 +9006,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1069450367}
   - {fileID: 825550481}
   - {fileID: 555949557}
   - {fileID: 1687685308}
@@ -9014,6 +9013,7 @@ RectTransform:
   - {fileID: 264745857}
   - {fileID: 327960114}
   - {fileID: 944321470}
+  - {fileID: 1069450367}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9065,7 +9065,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1670254945}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -9715,7 +9715,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1857917121}
   - component: {fileID: 1857917120}
-  - component: {fileID: 1857917122}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -9759,18 +9758,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1857917122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857917119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebab29a07a48a5d41a0f3b4daa9aabd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1866525210
 GameObject:
   m_ObjectHideFlags: 0
@@ -10651,7 +10638,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2093957139}
   - component: {fileID: 2093957138}
-  - component: {fileID: 2093957140}
   m_Layer: 0
   m_Name: RaycastHPBar
   m_TagString: Untagged
@@ -10688,18 +10674,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2093957140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093957137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebab29a07a48a5d41a0f3b4daa9aabd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2121359588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11215,7 +11189,7 @@ PrefabInstance:
     - target: {fileID: 2903266264042339212, guid: 7b5a7828d51707a41bccb10421e6b01f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2903266264042339212, guid: 7b5a7828d51707a41bccb10421e6b01f,
         type: 3}
