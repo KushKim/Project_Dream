@@ -11653,7 +11653,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 871491013}
         m_MethodName: ActivePauseBt
         m_Mode: 1
         m_Arguments:
@@ -17411,8 +17411,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: RetryBt
+      - m_Target: {fileID: 871491013}
+        m_MethodName: LV3RetryBt
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21858,7 +21858,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 871491013}
         m_MethodName: QuitBt
         m_Mode: 1
         m_Arguments:

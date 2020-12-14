@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour
         audioManager.Play("메뉴클릭");
         Debug.Log("Restart Game");
         Time.timeScale = 1.0f;
+        Player.playerHP = 3;
         SceneManager.LoadScene("Level1");
     }
     public void QuitBt()
@@ -56,18 +57,21 @@ public class GameManager : MonoBehaviour
         audioManager.Play("메뉴클릭");
         Debug.Log("Quit Game");
         Time.timeScale = 1.0f;
+        Player.playerHP = 3;
         SceneManager.LoadScene("MainStart");
     }
     public void LV2RetryBt()
     {
         audioManager.Play("메뉴클릭");
         Time.timeScale = 1.0f;
+        Player.playerHP = 3;
         SceneManager.LoadScene("Level2");
     }
     public void LV3RetryBt()
     {
         audioManager.Play("메뉴클릭");
         Time.timeScale = 1.0f;
+        Player.playerHP = 3;
         SceneManager.LoadScene("Level3");
     }
 }

@@ -19,6 +19,7 @@ public class ChangeScene : MonoBehaviour
         image.color = color;
         if (image.color.a >= 0.9999f)
         {
+            Player.playerHP = 3;
             SceneManager.LoadScene(sceneName);
         }
     }
