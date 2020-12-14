@@ -7,11 +7,11 @@ public class touchtostart : MonoBehaviour
 {
     public void OnClickChange()
     {
-        LoadingSceneManager.LoadScene("loadscene");
+        SceneManager.LoadScene("loadscene");
     }
     public void OnClickSkip()
     {
-        LoadingSceneManager.LoadScene("loadscene");
+        SceneManager.LoadScene("loadscene");
     }
 
 

@@ -7,6 +7,6 @@ public class Skip : MonoBehaviour
 {
        public void StartOnclick()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("loadscene");
     }
 }
