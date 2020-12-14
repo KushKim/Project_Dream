@@ -10,6 +10,19 @@ public class playerdead : MonoBehaviour
     public Image image;
     public AudioSource audioSource;
 
+    static private playerdead instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        instance = this;
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     private void Start()
     {
         youdie = GameObject.Find("Canvas").transform.Find("Youdie").gameObject;
@@ -34,7 +47,10 @@ public class playerdead : MonoBehaviour
 
     void Update()
     {
-        
+        if (SceneManager.GetActiveScene().name != "Level1" && SceneManager.GetActiveScene().name != "Level2" && SceneManager.GetActiveScene().name != "Level3")
+        {
+            Destroy(this.gameObject);
+        }
         if (Player.playerHP == 0) // 클래스에 있는 HP 값으로 수정
         {
             Time.timeScale = 0.5f;

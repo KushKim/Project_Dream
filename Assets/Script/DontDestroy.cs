@@ -5,12 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class DontDestroy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    static private DontDestroy instance;
+
+    private void Awake()
     {
+        if(instance != null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        instance = this;
         DontDestroyOnLoad(this.gameObject);
     }
-
     // Update is called once per frame
     void Update()
     {
