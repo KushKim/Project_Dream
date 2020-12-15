@@ -12929,6 +12929,7 @@ GameObject:
   - component: {fileID: 1504132594}
   - component: {fileID: 1504132593}
   - component: {fileID: 1504132595}
+  - component: {fileID: 1504132596}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -12976,6 +12977,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leveltext: {fileID: 863095190}
   fadeoutTime: 3
+--- !u!114 &1504132596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504132592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d70246011fad1cf4b94e9cd21a9be185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FrameRate: 60
 --- !u!1001 &1514123388
 PrefabInstance:
   m_ObjectHideFlags: 0
