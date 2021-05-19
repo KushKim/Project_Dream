@@ -12,4 +12,4 @@ ___
 - 기본적으로 스프라이트 및 리소스등은 Google Drive 로 관리되고있습니다. 필요하신 리소스는 하단 드라이브 링크로 다운받아주시면 됩니다.
 > [GOOGLE DRIVE](https://drive.google.com/drive/folders/1B-5K9Upxt3rQpv7zDax7kTPPVHSNPkYZ?usp=sharing)
 
-#### **이외 해당저장소에대한 문의사항은 카카오톡에서 @김정흔 으로 언급후 내용적어주시면 확인 도와드리겠습니다. :)**
+#### **해당 프로젝트에 대한 문의는 kushkim@icloud.com 으로 문의 부탁드립니다.**
